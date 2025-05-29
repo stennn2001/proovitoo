@@ -1,0 +1,31 @@
+Test Assignment 1
+
+As a user I want use command line tool to parse file of urls and see http status code and how many seconds the request took.
+
+Command line tool has options -i <input-file>
+
+Input file is csv file with separator pipe, example of a file
+
+Neti|http://www.neti.ee
+
+Google|http://www.google.com
+
+ 
+
+CSV first column is name and second is url.
+
+As a user I want to see the http status code and request time(2 decimals) in console like this
+
+./download.py -i urls.csv
+
+“Neti”, HTTP 200, time 0.51 seconds
+
+“Google”, HTTP 200, time 0.60 seconds
+
+ 
+
+option -h will show the help of the script.
+
+If page is not reachable in 3 seconds print "Skipping <url>"
+
+To parse command line arguments use click https://pypi.org/project/click/
