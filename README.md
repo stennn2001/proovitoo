@@ -45,7 +45,7 @@ This test assignment consists of **two parts**, each located in its own folder.
    ```bash
    cd Test_assignment_1
    ```
-2. Run the following command to start the download script:
+2. Run the following command to start the script:
    ```bash
    ./download.py -i urls.csv
    ```
